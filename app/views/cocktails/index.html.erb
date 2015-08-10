@@ -1,0 +1,20 @@
+<h1> Cocktails </h1>
+
+<% @cocktails.each do |cocktail| %>
+  <div class="cocktail">
+    <div class="row">
+      <div class="col-md-1">
+        <p class="rank-this-week"> </p>
+      </div>
+      <div class="col-md-9">
+        <p class="name"> <%= cocktail.name =%> </p>
+        <p class="glass"> Glassware:  <%= cocktail.glass =%>  </p>
+        <p class="ingredients"> Ingredients: <%= cocktail.ingredient1 =%> <%= cocktail.amount1 =%>   <%= cocktail.ingredient2 =%> <%= cocktail.amount2 =%>   <%= cocktail.ingredient3 =%> <%= cocktail.amount3 =%>   <%= cocktail.ingredient4 =%> <%= cocktail.amount4 =%>   <%= cocktail.ingredient5 =%> <%= cocktail.amount5 =%> </p>
+        <p class="garnishes"> Garnish: <%= cocktail.garnishes =%>  </p>
+        <p class="instructions"> Instructions: <%= cocktail.instructions =%>
+        <p class="notes"> Notes: <%= cocktail.notes =%> </p>
+		<br></br>
+      </div>
+    </div>
+  </div>
+<% end %>
